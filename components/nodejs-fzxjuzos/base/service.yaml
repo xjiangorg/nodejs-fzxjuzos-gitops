@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: nodejs-fzxjuzos
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-fzxjuzos 
+  name: nodejs-fzxjuzos
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: nodejs-fzxjuzos 
